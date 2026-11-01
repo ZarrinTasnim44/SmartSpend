@@ -1,0 +1,70 @@
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  border-color: #cbd5e1;
+}
+
+.stat-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.stat-amount {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.stat-subtitle {
+  font-size: 0.72rem;
+  color: var(--text-subtle);
+}
+
+.stat-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.variant-primary .stat-icon-wrapper {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.variant-success .stat-icon-wrapper {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
+
+.variant-warning .stat-icon-wrapper {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+}
+
+.variant-danger .stat-icon-wrapper {
+  background-color: var(--danger-bg);
+  color: var(--danger);
+}
